@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Escape Room - Triqui</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>🔒 Habitación misteriosa</h1>
+    <p>Encuentra la llave y gana el triqui para escapar</p>
+
+    <div id="room">
+        <div id="box" class="item">📦 Caja</div>
+        <div id="door" class="door">🚪 Puerta cerrada</div>
+    </div>
+
+    <p id="message"></p>
+
+    <div id="triqui-container" class="hidden">
+        <h2>Derrota a la IA para abrir la puerta</h2>
+        <div id="board" class="board"></div>
+        <p id="status"></p>
+        <button onclick="resetGame()">Reiniciar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
